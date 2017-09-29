@@ -122580,7 +122580,7 @@ export const lotsOfStyles = [
       position: 'relative',
       userSelect: 'none',
       width: '100%',
-      ':after': {
+      '::after': {
         background:
           'linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%)',
         bottom: '0',
@@ -122593,7 +122593,7 @@ export const lotsOfStyles = [
         start: '0',
         zIndex: 1,
       },
-      ':before': {
+      '::before': {
         background:
           'linear-gradient(280deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0.6) 100%)',
         content: ' ',
@@ -157776,7 +157776,7 @@ export const lotsOfStyles = [
       marginHorizontal: 32,
       minHeight: 140,
       overflow: 'hidden',
-      ':after': {
+      '::after': {
         clear: 'both',
         content: ' ',
         display: 'block',
@@ -207408,7 +207408,7 @@ export const lotsOfStyles = [
       verticalAlign: 'top',
       width: 2,
       '::after': {
-        backgroundColor: 'var(big-gray-30)',
+        backgroundColor: 'var(--big-gray-30)',
         bottom: -15,
         content: '""',
         end: 0,
@@ -238774,7 +238774,7 @@ export const lotsOfStyles = [
       overflow: 'hidden',
       position: 'relative',
       width: 218,
-      ':after': {
+      '::after': {
         borderColor: 'var(--messenger-card-background)',
         borderRadius: 54,
         borderStyle: 'solid',
@@ -245077,7 +245077,7 @@ export const lotsOfStyles = [
       display: 'flex',
       maxWidth: 'calc(100% - 8px)',
       position: 'relative',
-      ':after': {
+      '::after': {
         borderColor: 'black',
         borderRadius: 22,
         borderStyle: 'solid',
@@ -245092,7 +245092,7 @@ export const lotsOfStyles = [
         top: -4,
         zIndex: 1,
       },
-      ':before': {
+      '::before': {
         borderColor: 'white',
         borderRadius: 22,
         borderStyle: 'solid',
@@ -245111,58 +245111,58 @@ export const lotsOfStyles = [
     },
     emphasis_ring_before_xma: {
       borderBottomStyle: 'none',
-      ':after': {
+      '::after': {
         borderBottomStyle: 'none',
         borderBottomEndRadius: 0,
         borderBottomStartRadius: 0,
       },
-      ':before': {
+      '::before': {
         borderBottomStyle: 'none',
         borderBottomEndRadius: 0,
         borderBottomStartRadius: 0,
       },
     },
     emphasis_ring_connect_bottom_incoming: {
-      ':after': {
+      '::after': {
         borderBottomStartRadius: 6,
       },
-      ':before': {
+      '::before': {
         borderBottomStartRadius: 6,
       },
     },
     emphasis_ring_connect_bottom_outgoing: {
-      ':after': {
+      '::after': {
         borderBottomEndRadius: 6,
       },
-      ':before': {
+      '::before': {
         borderBottomEndRadius: 6,
       },
     },
     emphasis_ring_connect_top_incoming: {
-      ':after': {
+      '::after': {
         borderTopStartRadius: 6,
       },
-      ':before': {
+      '::before': {
         borderTopStartRadius: 6,
       },
     },
     emphasis_ring_connect_top_outgoing: {
-      ':after': {
+      '::after': {
         borderTopEndRadius: 6,
       },
-      ':before': {
+      '::before': {
         borderTopEndRadius: 6,
       },
     },
     emphasis_ring_xma: {
       borderTopStyle: 'none',
       width: 'calc(100% - 8px)',
-      ':after': {
+      '::after': {
         borderTopStyle: 'none',
         borderTopEndRadius: 0,
         borderTopStartRadius: 0,
       },
-      ':before': {
+      '::before': {
         borderTopStyle: 'none',
         borderTopEndRadius: 0,
         borderTopStartRadius: 0,
@@ -249120,7 +249120,7 @@ export const lotsOfStyles = [
     },
     overlay: {
       maxWidth: '100%',
-      ':before': {
+      '::before': {
         content: "''",
         height: '100%',
         position: 'absolute',
@@ -249473,7 +249473,7 @@ export const lotsOfStyles = [
       overflow: 'hidden',
       padding: 0,
       position: 'relative',
-      ':after': {
+      '::after': {
         borderColor: 'var(--messenger-card-background)',
         borderRadius: 56,
         borderStyle: 'solid',
@@ -250746,7 +250746,7 @@ export const lotsOfStyles = [
       padding: '7px 12px 8px 12px',
       position: 'relative',
       wordBreak: 'break-word',
-      ':after': {
+      '::after': {
         borderColor: 'var(--messenger-card-background)',
         borderRadius: 56,
         borderStyle: 'solid',
@@ -250762,22 +250762,22 @@ export const lotsOfStyles = [
       },
     },
     incoming_connect_bot: {
-      ':after': {
+      '::after': {
         borderBottomStartRadius: 42,
       },
     },
     incoming_connect_top: {
-      ':after': {
+      '::after': {
         borderTopStartRadius: 42,
       },
     },
     outgoing_connect_bot: {
-      ':after': {
+      '::after': {
         borderBottomEndRadius: 42,
       },
     },
     outgoing_connect_top: {
-      ':after': {
+      '::after': {
         borderTopEndRadius: 42,
       },
     },
@@ -250785,7 +250785,7 @@ export const lotsOfStyles = [
       boxSizing: 'border-box',
       maxWidth: 300,
       width: '100%',
-      ':after': {
+      '::after': {
         borderBottomEndRadius: 0,
         borderBottomStartRadius: 0,
       },
@@ -316838,7 +316838,7 @@ export const lotsOfStyles = [
       caretColor: 'var(--primary-text)',
     },
     markdown: {
-      fontFamily: 'var(x-monospace-font) !important',
+      fontFamily: 'var(--x-monospace-font) !important',
     },
     companyPoll: {
       minHeight: 60,
@@ -341595,7 +341595,7 @@ export const lotsOfStyles = [
       display: 'block',
       pointerEvents: 'none',
       position: 'absolute',
-      ':after': {
+      '::after': {
         content: '""',
         display: 'block',
         position: 'absolute',
@@ -349434,7 +349434,6 @@ export const lotsOfStyles = [
 
       borderRadius: '18px',
       height: '34px!important',
-      padding: '9px!important 30px!important',
       width: '100%',
     },
     plusIcon: {
@@ -349524,7 +349523,6 @@ export const lotsOfStyles = [
 
       borderRadius: '18px',
       height: '34px!important',
-      padding: '9px!important 30px!important',
       width: '100%',
     },
     plusIcon: {
