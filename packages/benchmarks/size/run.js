@@ -47,10 +47,10 @@ const argv = yargs(hideBin(process.argv)).option('outfile', {
 const outfile = argv.outfile;
 
 const files = [
-  path.join(__dirname, '../stylex/lib/stylex.js'),
-  path.join(__dirname, '../stylex/lib/StyleXSheet.js'),
-  path.join(__dirname, '../../apps/rollup-example/.build/bundle.js'),
-  path.join(__dirname, '../../apps/rollup-example/.build/stylex.css'),
+  path.join(__dirname, '../../stylex/lib/stylex.js'),
+  path.join(__dirname, '../../stylex/lib/StyleXSheet.js'),
+  path.join(__dirname, './.build/bundle.js'),
+  path.join(__dirname, './.build/stylex.css'),
 ];
 
 console.log('Running "size" benchmark, please wait...');

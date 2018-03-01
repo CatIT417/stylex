@@ -7,6 +7,8 @@
  *
  */
 
+/* eslint-disable */
+
 'use strict';
 
 import * as stylex from '@stylexjs/stylex';

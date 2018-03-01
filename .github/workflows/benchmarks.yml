@@ -1,4 +1,4 @@
-name: performance
+name: benchmarks
 
 on: [pull_request]
 
@@ -20,7 +20,7 @@ jobs:
       run: |
         git checkout -f ${{ github.event.pull_request.base.sha }}
         npm install --loglevel error
-        if npm run size -w @stylexjs/scripts -- -o ${{ env.BASE_JSON }}; then
+        if npm run size -w benchmarks -- -o ${{ env.BASE_JSON }}; then
           echo "Ran successfully on base branch"
         else
           echo "{}" > ${{ env.BASE_JSON }}  # Empty JSON as default
@@ -30,13 +30,13 @@ jobs:
       run: |
         git checkout -f ${{ github.event.pull_request.head.sha }}
         npm install --loglevel error
-        npm run size -w @stylexjs/scripts -- -o ${{ env.PATCH_JSON }}
+        npm run size -w benchmarks -- -o ${{ env.PATCH_JSON }}
         echo "Ran successfully on patch branch"
     - name: 'Collect results'
       id: collect
       run: |
         echo "table<<EOF" >> $GITHUB_OUTPUT
-        npm run size:compare -w @stylexjs/scripts -- ${{ env.BASE_JSON }} ${{ env.PATCH_JSON }} >> markdown
+        npm run size:compare -w benchmarks -- ${{ env.BASE_JSON }} ${{ env.PATCH_JSON }} >> markdown
         cat markdown >> $GITHUB_OUTPUT
         echo "EOF" >> $GITHUB_OUTPUT
     - name: 'Post comment'
