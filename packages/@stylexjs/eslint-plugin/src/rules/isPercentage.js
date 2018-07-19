@@ -8,12 +8,14 @@
  */
 
 'use strict';
+
 import type {
   RuleCheck,
   RuleResponse,
   Variables,
 } from '../stylex-valid-styles';
 import type { Node } from 'estree';
+
 import makeVariableCheckingRule from '../utils/makeVariableCheckingRule';
 
 function isPercentage(node: Node, _variables?: Variables): RuleResponse {
